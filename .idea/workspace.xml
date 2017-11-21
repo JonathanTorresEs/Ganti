@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0011f336-0a15-478a-992f-cb4352a9666b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/controllers/mantenimiento.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/controllers/mine_products.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/controllers/oper_machines.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/controllers/order.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/controllers/purchase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/controllers/requesition.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/models/mine_products_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/models/multipleRequsition_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/models/oper_machines_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/models/order_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/models/purchase_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/models/requesition_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/views/order_print_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/views/order_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/views/purchase_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/application/views/requesition_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/public/js/disable_btn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/public/js/editar_input.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/controllers/compras.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/controllers/ordenes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/models/compras_model.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/models/ordenes_model.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/views/compras_view.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/application/views/ordenes_view.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/files/pdfs/compra.pdf" afterPath="$PROJECT_DIR$/admin/files/pdfs/compra.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/config/config.php" afterPath="$PROJECT_DIR$/admin/application/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/config/database.php" afterPath="$PROJECT_DIR$/admin/application/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/admin.php" afterPath="$PROJECT_DIR$/admin/application/controllers/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/compras2.php" afterPath="$PROJECT_DIR$/admin/application/controllers/compras2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/controles.php" afterPath="$PROJECT_DIR$/admin/application/controllers/controles.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/costos.php" afterPath="$PROJECT_DIR$/admin/application/controllers/costos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/giros.php" afterPath="$PROJECT_DIR$/admin/application/controllers/giros.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/login.php" afterPath="$PROJECT_DIR$/admin/application/controllers/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/maquinas.php" afterPath="$PROJECT_DIR$/admin/application/controllers/maquinas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/minas.php" afterPath="$PROJECT_DIR$/admin/application/controllers/minas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/operadores.php" afterPath="$PROJECT_DIR$/admin/application/controllers/operadores.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/pdf_ci.php" afterPath="$PROJECT_DIR$/admin/application/controllers/pdf_ci.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/produccion.php" afterPath="$PROJECT_DIR$/admin/application/controllers/produccion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/productos.php" afterPath="$PROJECT_DIR$/admin/application/controllers/productos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/proveedores.php" afterPath="$PROJECT_DIR$/admin/application/controllers/proveedores.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/libraries/dompdf/lib/fonts/log.htm" afterPath="$PROJECT_DIR$/admin/application/libraries/dompdf/lib/fonts/log.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/models/controles_model.php" afterPath="$PROJECT_DIR$/admin/application/models/controles_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/models/costos_model.php" afterPath="$PROJECT_DIR$/admin/application/models/costos_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/models/giros_model.php" afterPath="$PROJECT_DIR$/admin/application/models/giros_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/models/minas_model.php" afterPath="$PROJECT_DIR$/admin/application/models/minas_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/models/operadores_model.php" afterPath="$PROJECT_DIR$/admin/application/models/operadores_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/models/productos_model.php" afterPath="$PROJECT_DIR$/admin/application/models/productos_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/models/proveedores_model.php" afterPath="$PROJECT_DIR$/admin/application/models/proveedores_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/admin_view.php" afterPath="$PROJECT_DIR$/admin/application/views/admin_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/compras2_view.php" afterPath="$PROJECT_DIR$/admin/application/views/compras2_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/controles_view.php" afterPath="$PROJECT_DIR$/admin/application/views/controles_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/costos_view.php" afterPath="$PROJECT_DIR$/admin/application/views/costos_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/giros_view.php" afterPath="$PROJECT_DIR$/admin/application/views/giros_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/maquinas_view.php" afterPath="$PROJECT_DIR$/admin/application/views/maquinas_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/minas_view.php" afterPath="$PROJECT_DIR$/admin/application/views/minas_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/operadores_view.php" afterPath="$PROJECT_DIR$/admin/application/views/operadores_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/partials/admin_menu_view.php" afterPath="$PROJECT_DIR$/admin/application/views/partials/admin_menu_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/partials/footer_view.php" afterPath="$PROJECT_DIR$/admin/application/views/partials/footer_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/pdf_view.php" afterPath="$PROJECT_DIR$/admin/application/views/pdf_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/productos_view.php" afterPath="$PROJECT_DIR$/admin/application/views/productos_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/proveedores_view.php" afterPath="$PROJECT_DIR$/admin/application/views/proveedores_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/test.php" afterPath="$PROJECT_DIR$/admin/application/views/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/usuarios_view.php" afterPath="$PROJECT_DIR$/admin/application/views/usuarios_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/public/css/sb-admin-2/sb-admin-2.css" afterPath="$PROJECT_DIR$/admin/public/css/sb-admin-2/sb-admin-2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/public/css/style.css" afterPath="$PROJECT_DIR$/admin/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/system/core/Input.php" afterPath="$PROJECT_DIR$/admin/system/core/Input.php" />
+    </list>
+    <ignored path="ganti.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ganti" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="costos_model.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/application/models/costos_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="200" column="111" selection-start-line="200" selection-start-column="111" selection-end-line="200" selection-end-column="111" />
+              <folding>
+                <marker date="1510859316440" expanded="true" signature="6236:6277" ph="SELECT MAX(c... costos" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="costos_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/views/costos_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agregar_costo_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/views/agregar_costo_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="169" column="12" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="120" />
+              <folding>
+                <element signature="n#style#0;n#div#5;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/views/order_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="155" column="69" selection-start-line="155" selection-start-column="69" selection-end-line="155" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="costos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/controllers/costos.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2505">
+              <caret line="179" column="10" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
+              <folding>
+                <element signature="n#ver_detalles#0;n#Costos#0;n#!!top" expanded="false" />
+                <element signature="n#eliminar_costo#0;n#Costos#0;n#!!top" expanded="false" />
+                <element signature="n#get_giro_clave#0;n#Costos#0;n#!!top" expanded="false" />
+                <element signature="n#get_localidad_municipio#0;n#Costos#0;n#!!top" expanded="false" />
+                <element signature="n#get_localidad_estado#0;n#Costos#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/admin/application/models/requesition_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/multipleRequsition_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/purchase_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/order_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/controles_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/controles.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/requesition.php" />
+        <option value="$PROJECT_DIR$/admin/public/js/nodb_table_purchase.js" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/operadores.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/config.php" />
+        <option value="$PROJECT_DIR$/admin/public/js/hideTable.js" />
+        <option value="$PROJECT_DIR$/admin/application/views/requesition_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/order_view.php" />
+        <option value="$PROJECT_DIR$/admin/public/css/bootstrap/bootstrap-theme.min.css" />
+        <option value="$PROJECT_DIR$/admin/public/css/core.css" />
+        <option value="$PROJECT_DIR$/admin/application/views/partials/header_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/editar_cliente_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/proveedores_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/cliente_detalles_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/clientes_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/clientes_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/agregar_cliente_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/clientes.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/giros_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/partials/empleados_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/order2_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/order_print_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/order.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/order_print_pdf_view.php" />
+        <option value="$PROJECT_DIR$/admin/system/core/Input.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/empleados_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/detalles_empleado_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/partials/admin_menu_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/partials/footer_view.php" />
+        <option value="$PROJECT_DIR$/admin/public/js/jquery-ui.js" />
+        <option value="$PROJECT_DIR$/admin/public/js/detalles_costos.js" />
+        <option value="$PROJECT_DIR$/admin/application/models/empleados_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/detalles_costo_view.php" />
+        <option value="$PROJECT_DIR$/admin/public/js/agregar_empleado.js" />
+        <option value="$PROJECT_DIR$/admin/application/views/agregar_empleado_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/empleados.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/editar_empleado_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/costos_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/costos.php" />
+        <option value="$PROJECT_DIR$/admin/public/js/costos.js" />
+        <option value="$PROJECT_DIR$/admin/application/views/costos_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/agregar_costo_view.php" />
+        <option value="$PROJECT_DIR$/admin/public/css/style.css" />
+        <option value="$PROJECT_DIR$/admin/public/css/sb-admin-2/sb-admin-2.css" />
+        <option value="$PROJECT_DIR$/admin/public/js/sidebar.js" />
+        <option value="$PROJECT_DIR$/admin/application/views/editar_costo_view.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../heatmap.js-amd" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="SearchEverywhereHistoryKey" value="sideba&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/sidebar.js&#10;detall&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/detalles_costo_view.php&#10;css&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/style.css&#10;agregar&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/agregar_costo_view.php&#10;cos&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/costos.php&#10;order&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/order.php&#10;costos&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/costos_view.php&#10;agreg&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/agregar_costo_view.php&#10;editar&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/editar_costo_view.php&#10;hideta&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/hideTable.js&#10;reques&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/requesition_view.php&#10;deta&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/detalles_empleado_view.php&#10;emplead&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/empleados.php&#10;empl&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/empleados.php&#10;costo&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/agregar_costo_view.php&#10;emple&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/empleados.php&#10;js&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/costos.js&#10;agrega&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/agregar_costo_view.php&#10;emplea&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/empleados_model.php&#10;cliente&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/cliente_detalles_view.php&#10;agre&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/agregar_costo_view.php&#10;empleado&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/empleados_model.php&#10;purchase&#9;null&#9;null&#10;clientes&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/clientes.php&#10;style&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/style.css&#10;jquery-ui&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/jquery-ui.min.js&#10;jquery&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/jquery-ui.min.js&#10;reque&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/requesition_view.php&#10;cost&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/costos.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/partials/admin_menu_view.php&#10;sty&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/style.css&#10;input&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/system/core/Input.php&#10;print&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/order_print_view.php&#10;inpu&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/system/core/Input.php&#10;operado&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/operadores_view.php&#10;operadores&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/operadores.php&#10;opera&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/operadores_view.php&#10;cli&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/clientes_view.php&#10;clien&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/clientes_model.php&#10;operador&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/operadores_view.php&#10;maquin&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/maquinas_view.php&#10;giros&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/giros_view.php&#10;order mode&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/order_model.php&#10;nav&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/user_guide/nav/nav.js&#10;usua&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/usuarios_view.php&#10;hide&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/hideTable.js&#10;requ&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/requesition_view.php&#10;sb-a&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/sb-admin-2/sb-admin-2.css&#10;boot&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/bootstrap/bootstrap.min.css&#10;boots&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/bootstrap/bootstrap.min.css" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ganti\admin\application\views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0011f336-0a15-478a-992f-cb4352a9666b" name="Default" comment="" />
+      <created>1504891719107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1504891719107</updated>
+      <workItem from="1504891720850" duration="3269000" />
+      <workItem from="1505143373136" duration="15325000" />
+      <workItem from="1505229755647" duration="12775000" />
+      <workItem from="1505333631875" duration="12544000" />
+      <workItem from="1505403879222" duration="7386000" />
+      <workItem from="1505413246243" duration="2839000" />
+      <workItem from="1505748143039" duration="11876000" />
+      <workItem from="1505764475785" duration="663000" />
+      <workItem from="1505834683707" duration="12849000" />
+      <workItem from="1505938500656" duration="12364000" />
+      <workItem from="1506008532680" duration="10822000" />
+      <workItem from="1506096873271" duration="5017000" />
+      <workItem from="1506370059304" duration="3210000" />
+      <workItem from="1506557703207" duration="1589000" />
+      <workItem from="1506729211667" duration="4829000" />
+      <workItem from="1506805126172" duration="5718000" />
+      <workItem from="1506959919236" duration="11099000" />
+      <workItem from="1507045407009" duration="1207000" />
+      <workItem from="1507148845763" duration="11119000" />
+      <workItem from="1507217354423" duration="12320000" />
+      <workItem from="1507303497405" duration="15585000" />
+      <workItem from="1507359934823" duration="3881000" />
+      <workItem from="1507562820468" duration="2475000" />
+      <workItem from="1507754882872" duration="1448000" />
+      <workItem from="1507870692044" duration="139000" />
+      <workItem from="1507908686476" duration="4019000" />
+      <workItem from="1508168072470" duration="33000" />
+      <workItem from="1508256840798" duration="661000" />
+      <workItem from="1508435481610" duration="4592000" />
+      <workItem from="1508513349319" duration="12341000" />
+      <workItem from="1508773257947" duration="2578000" />
+      <workItem from="1508863291756" duration="420000" />
+      <workItem from="1508966018184" duration="9392000" />
+      <workItem from="1509032639529" duration="10931000" />
+      <workItem from="1509119361139" duration="6504000" />
+      <workItem from="1509383527170" duration="10505000" />
+      <workItem from="1509467505898" duration="6672000" />
+      <workItem from="1509571549716" duration="7147000" />
+      <workItem from="1509642973790" duration="9297000" />
+      <workItem from="1509727788052" duration="11219000" />
+      <workItem from="1509986204847" duration="12621000" />
+      <workItem from="1510003873919" duration="127000" />
+      <workItem from="1510073636496" duration="7678000" />
+      <workItem from="1510107400708" duration="440000" />
+      <workItem from="1510178827079" duration="10830000" />
+      <workItem from="1510245392769" duration="10748000" />
+      <workItem from="1510295383230" duration="735000" />
+      <workItem from="1510332833870" duration="7734000" />
+      <workItem from="1510552751565" duration="206000" />
+      <workItem from="1510591418478" duration="11951000" />
+      <workItem from="1510612160337" duration="14000" />
+      <workItem from="1510679269949" duration="10536000" />
+      <workItem from="1510782502856" duration="11476000" />
+      <workItem from="1510852520436" duration="8994000" />
+      <workItem from="1511284042655" duration="4473000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="377222000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22254759" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/application/models/order_model.php</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/application/views/requesition_view.php</url>
+          <line>115</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/application/models/order_model.php</url>
+          <line>47</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/admin/public/js/sidebar.js</url>
+          <line>45</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="16" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin/application/views/partials/header_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="73" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/proveedores_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="136" column="164" selection-start-line="136" selection-start-column="133" selection-end-line="136" selection-end-column="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/admin_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/giros_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="90" column="97" selection-start-line="90" selection-start-column="97" selection-end-line="90" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/maquinas_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-897">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/controles_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/agregar_cliente_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/operadores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="131" column="41" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/operadores_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="194" column="66" selection-start-line="194" selection-start-column="66" selection-end-line="194" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/order2_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="322" column="33" selection-start-line="315" selection-start-column="24" selection-end-line="322" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/order_print_pdf_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="95" column="28" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/order_print_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/system/core/Input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="739" column="22" selection-start-line="739" selection-start-column="22" selection-end-line="739" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/clientes_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/editar_cliente_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="29" column="84" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/clientes_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="53" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/partials/admin_menu_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/compras2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="1468" column="8" selection-start-line="1468" selection-start-column="8" selection-end-line="1468" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/requesition_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-629">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/css/jqueryui/jquery-ui.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="4970" selection-start-line="6" selection-start-column="4964" selection-end-line="6" selection-end-column="4970" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/js/jquery-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="13762" column="0" selection-start-line="13762" selection-start-column="0" selection-end-line="13762" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/js/jquery-ui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="5" column="115" selection-start-line="5" selection-start-column="112" selection-end-line="5" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/partials/footer_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/requesition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20366">
+          <caret line="1198" column="46" selection-start-line="1198" selection-start-column="46" selection-end-line="1198" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/clientes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/order_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding>
+            <marker date="1507152004579" expanded="true" signature="3433:3478" ph="SELECT MAX(i... orders" />
+            <marker date="1507152004579" expanded="true" signature="3598:3618" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="4223:4302" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="4525:4627" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="4674:4791" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="5128:5560" ph="SELECT c.id_... orders" />
+            <marker date="1507152004579" expanded="true" signature="5767:6247" ph="SELECT c.id_... orders" />
+            <marker date="1507152004579" expanded="true" signature="6588:6666" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="6879:7005" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="7328:7565" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="7752:8020" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="8352:8426" ph="SELECT mine_... mines" />
+            <marker date="1507152004579" expanded="true" signature="8596:8682" ph="SELECT machi... machines" />
+            <marker date="1507152004579" expanded="true" signature="8866:8940" ph="SELECT mine_... mines" />
+            <marker date="1507152004579" expanded="true" signature="9075:9203" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="9647:9733" ph="SELECT machi... machines" />
+            <marker date="1507152004579" expanded="true" signature="9868:9997" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="10445:10523" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="10731:10857" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="11180:11354" ph="SELECT order... orders" />
+            <marker date="1507152004579" expanded="true" signature="11574:11652" ph="SELECT user_... users" />
+            <marker date="1507152004579" expanded="true" signature="11797:11920" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="12360:12433" ph="SELECT * FRO... orders" />
+            <marker date="1507152004579" expanded="true" signature="12634:12755" ph="SELECT * FRO... orders" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/purchase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/js/detalles_costos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/empleados_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/cliente_detalles_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/empleados_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="126" column="4" selection-start-line="126" selection-start-column="4" selection-end-line="134" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/detalles_empleado_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="470" column="6" selection-start-line="470" selection-start-column="6" selection-end-line="470" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/agregar_empleado_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/empleados.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="278" column="0" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/editar_empleado_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/js/agregar_empleado.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/requesition_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="436" column="14" selection-start-line="436" selection-start-column="14" selection-end-line="436" selection-end-column="14" />
+          <folding>
+            <element signature="e#5374#5504#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1016">
+          <caret line="176" column="8" selection-start-line="176" selection-start-column="8" selection-end-line="176" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/order_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="155" column="69" selection-start-line="155" selection-start-column="69" selection-end-line="155" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/costos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2505">
+          <caret line="179" column="10" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
+          <folding>
+            <element signature="n#ver_detalles#0;n#Costos#0;n#!!top" expanded="false" />
+            <element signature="n#eliminar_costo#0;n#Costos#0;n#!!top" expanded="false" />
+            <element signature="n#get_giro_clave#0;n#Costos#0;n#!!top" expanded="false" />
+            <element signature="n#get_localidad_municipio#0;n#Costos#0;n#!!top" expanded="false" />
+            <element signature="n#get_localidad_estado#0;n#Costos#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/js/costos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
+          <folding>
+            <element signature="e#83#617#0" expanded="false" />
+            <element signature="e#713#1209#0" expanded="false" />
+            <element signature="e#1303#1766#0" expanded="false" />
+            <element signature="e#1804#2267#0" expanded="false" />
+            <element signature="e#2473#3469#0" expanded="false" />
+            <element signature="e#4005#4215#0" expanded="false" />
+            <element signature="e#4326#4368#0" expanded="false" />
+            <element signature="e#4407#4622#0" expanded="false" />
+            <element signature="e#4663#4705#0" expanded="false" />
+            <element signature="e#4745#4938#0" expanded="false" />
+            <element signature="e#4980#5018#0" expanded="false" />
+            <element signature="n#!!block;n#doneTyping#0" expanded="false" />
+            <element signature="n#!!block;n#doneTyping2#0" expanded="false" />
+            <element signature="n#!!block;n#doneTyping3#0" expanded="false" />
+            <element signature="e#7437#8839#0" expanded="false" />
+            <element signature="e#7805#8827#0" expanded="false" />
+            <element signature="e#8881#9655#0" expanded="false" />
+            <element signature="e#9698#10074#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/costos_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/css/core.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1479">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/css/sb-admin-2/sb-admin-2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="141" column="33" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/js/sidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/agregar_costo_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="169" column="12" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="120" />
+          <folding>
+            <element signature="n#style#0;n#div#5;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/editar_costo_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="172" column="148" selection-start-line="172" selection-start-column="148" selection-end-line="172" selection-end-column="148" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/detalles_costo_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="121" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/js/hideTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="830">
+          <caret line="136" column="55" selection-start-line="136" selection-start-column="55" selection-end-line="136" selection-end-column="55" />
+          <folding>
+            <marker date="1508776085768" expanded="true" signature="3385:3403" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/costos_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="200" column="111" selection-start-line="200" selection-start-column="111" selection-end-line="200" selection-end-column="111" />
+          <folding>
+            <marker date="1510859316440" expanded="true" signature="6236:6277" ph="SELECT MAX(c... costos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
