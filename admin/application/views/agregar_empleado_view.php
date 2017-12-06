@@ -496,7 +496,105 @@
 
     </div>
 
-    <br>
+        <div class="page-header" style="background-color: black; color: white;">
+            <strong>EXPEDIENTE </strong>
+        </div>
+
+        <!--- EXPEDIENTES --->
+        <div class="row">
+
+            <div class="col-xs-2 col-half-offset" style="max-width: 100px;">
+                <div class="font-details-header"> <strong>SOLICITUD:</strong></div>
+                <select name="Solicitud" id="Solicitud" class="form-control" style="color: black">
+                    <option> Si </option>
+                    <option> No </option>
+                </select>
+            </div>
+
+            <div class="col-xs-2 col-half-offset" style="max-width: 100px;">
+                <div class="font-details-header"> <strong>ACTA:</strong></div>
+                <select name="Acta" id="Acta" class="form-control" style="color: black">
+                    <option> Si </option>
+                    <option> No </option>
+                </select>
+            </div>
+
+            <div class="col-xs-2 col-half-offset" style="max-width: 100px;">
+                <div class="font-details-header"> <strong>INE:</strong></div>
+                <select name="INE" id="INE" class="form-control" style="color: black">
+                    <option> Si </option>
+                    <option> No </option>
+                </select>
+            </div>
+
+            <div class="col-xs-2 col-half-offset" style="max-width: 100px;">
+                <div class="font-details-header"> <strong>CURP:</strong></div>
+                <select name="CURP_Expediente" id="CURP_Expendiente" class="form-control" style="color: black">
+                    <option> Si </option>
+                    <option> No </option>
+                </select>
+            </div>
+
+            <div class="col-xs-2 col-half-offset" style="max-width: 100px;">
+                <div class="font-details-header"> <strong>RFC:</strong></div>
+                <select name="RFC_Expediente" id="RFC_Expediente" class="form-control" style="color: black">
+                    <option> Si </option>
+                    <option> No </option>
+                </select>
+            </div>
+
+            <div class="col-xs-2 col-half-offset" style="max-width: 100px;">
+                <div class="font-details-header"> <strong>DOMICILIO:</strong></div>
+                <select name="Domicilio" id="Domicilio" class="form-control" style="color: black">
+                    <option> Si </option>
+                    <option> No </option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-2 col-half-offset" style="max-width: 100px;">
+                <div class="font-details-header"> <strong>ESTUDIOS:</strong></div>
+                <select name="Estudios" id="Estudios" class="form-control" style="color: black">
+                    <option> Si </option>
+                    <option> No </option>
+                    <option> NA </option>
+                </select>
+            </div>
+
+            <div class="col-xs-2 col-half-offset" style="max-width: 100px;">
+                <div class="font-details-header"> <strong>RECOMENDACION:</strong></div>
+                <select name="Recomendacion" id="Recomendacion" class="form-control" style="color: black">
+                    <option> Si </option>
+                    <option> No </option>
+                    <option> NA </option>
+                </select>
+            </div>
+
+            <div class="col-xs-2 col-half-offset" style="max-width: 100px;">
+                <div class="font-details-header"> <strong>ANTIDOPING:</strong></div>
+                <select name="Antidoping" id="Antidoping" class="form-control" style="color: black">
+                    <option> Si </option>
+                    <option> No </option>
+                    <option> NA </option>
+                </select>
+            </div>
+
+            <div class="col-xs-2 col-half-offset" style="max-width: 100px;">
+                <div class="font-details-header"> <strong>ANTECEDENTES:</strong></div>
+                <select name="Antecedentes" id="Antecedentes" class="form-control" style="color: black">
+                    <option> Si </option>
+                    <option> No </option>
+                    <option> NA </option>
+                </select>
+            </div>
+
+
+
+        </div>
+
     <div class="row">
 
         <div class="col-xs-4">

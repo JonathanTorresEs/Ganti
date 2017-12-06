@@ -17,6 +17,8 @@ class Empleados_model extends  CI_Model{
         return $query->result();
     }
 
+    //INSERT METHODS
+
     public function insertar($employee)
     {
         if ($this->db->insert('empleados', $employee))
@@ -50,15 +52,41 @@ class Empleados_model extends  CI_Model{
             return false;
     }
 
+    public function insertar_nomina($employee)
+    {
+        if ($this->db->insert('empleados_nomina', $employee))
+            return true;
+        else
+            return false;
+    }
+
+    public function insertar_expediente($employee)
+    {
+        if ($this->db->insert('empleados_expediente', $employee))
+            return true;
+        else
+            return false;
+    }
+
     public function lastId()
     {
         $maxid = $this->db->query('SELECT MAX(empleado_id) AS maxid FROM empleados')->row()->maxid;
         return $maxid;
     }
 
+    //GET METHODS
+
     public function traer_detalles($empleado_id){
         $this->db->select('*');
         $this->db->from('empleados');
+        $this->db->where('empleado_id', $empleado_id);
+        $query = $this->db->get();
+        return $query->row();
+    }
+
+    public function traer_detalles_nomina($empleado_id){
+        $this->db->select('*');
+        $this->db->from('empleados_nomina');
         $this->db->where('empleado_id', $empleado_id);
         $query = $this->db->get();
         return $query->row();
@@ -88,6 +116,77 @@ class Empleados_model extends  CI_Model{
         return $query->row();
     }
 
+    public function traer_detalles_expediente($empleado_id){
+        $this->db->select('*');
+        $this->db->from('empleados_expediente');
+        $this->db->where('empleado_id', $empleado_id);
+        $query = $this->db->get();
+        return $query->row();
+    }
+
+    //For Editing user's nomina: bring user nomina
+    public function traer_nomina($grupo, $dias, $ahorro){
+        $this->db->select('*');
+        $this->db->from('nominas');
+        $where = array('grupo' => $grupo, 'dias' => $dias, 'fondo_ahorro' => $ahorro);
+        $this->db->where($where);
+        $query = $this->db->get();
+        return $query->row();
+    }
+
+    //Used to bring all Nomina Grupos when loading nomina_cliente_view for selectbox
+    public function traer_nomina_grupos()
+    {
+        $this->db->select('grupo');
+        $this->db->from('nominas');
+        $this->db->distinct();
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    //Used to bring all Nomina DIAS when loading nomina_cliente_view for select box
+    public function traer_nomina_dias()
+    {
+        $this->db->select('dias');
+        $this->db->from('nominas');
+        $this->db->distinct();
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    //AJAX: Used to bring corresponding nomina after user selects grupo and dias
+    public function traer_nomina_ajax($grupo, $dias)
+    {
+        $this->db->select('*');
+        $this->db->from('nominas');
+        $where = array('grupo' => $grupo, 'dias' => $dias);
+        $this->db->where($where);
+        $query = $this->db->get();
+        return $query->row();
+    }
+
+    public function traer_nomina_ahorros()
+    {
+        $this->db->select('fondo_ahorro');
+        $this->db->from('nominas');
+        $this->db->distinct();
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+    //AJAX: Used to bring fondo_ahorro if Dias is not 7
+    public function traer_nomina_ahorros_ajax($grupo, $dias)
+    {
+        $this->db->select('fondo_ahorro');
+        $this->db->from('nominas');
+        $where = array('grupo' => $grupo, 'dias' => $dias);
+        $this->db->where($where);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+
+    //UPDATE METHODS
     public function actualizarEmpleado($id, $empleado)
     {
         $this->db->where('empleado_id', $id);
@@ -124,6 +223,25 @@ class Empleados_model extends  CI_Model{
             return false;
     }
 
+    public function actualizarEmpleadoNomina($id, $empleado)
+    {
+        $this->db->where('empleado_id', $id);
+        if ($this->db->update('empleados_nomina', $empleado))
+            return true;
+        else
+            return false;
+    }
+
+    public function actualizarEmpleadoExpediente($id, $empleado)
+    {
+        $this->db->where('empleado_id', $id);
+        if ($this->db->update('empleados_expediente', $empleado))
+            return true;
+        else
+            return false;
+    }
+
+    //DELETE METHODS
     public function eliminarEmpleado($id)
     {
         $this->db->set('deleted_at', date("Y-m-d H:i:s"));
@@ -159,6 +277,16 @@ class Empleados_model extends  CI_Model{
         $this->db->set('deleted_at', date("Y-m-d H:i:s"));
         $this->db->where('empleado_id', $id);
         if ($this->db->update('empleados_otros'))
+            return true;
+        else
+            return false;
+    }
+
+    public function eliminarEmpleadoExpediente($id)
+    {
+        $this->db->set('deleted_at', date("Y-m-d H:i:s"));
+        $this->db->where('empleado_id', $id);
+        if ($this->db->update('empleados_expediente'))
             return true;
         else
             return false;

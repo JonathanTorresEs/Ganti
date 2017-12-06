@@ -64,6 +64,10 @@
                 </li>
 
                 <li>
+                    <?=anchor('nominas', '<i class="fa fa-money fa-fw"></i> <p class="menuText" style="display: none"> Nóminas </p>') ?>
+                </li>
+
+                <li>
                     <?=anchor('usos', '<i class="fa fa-exchange fa-fw"></i> <p class="menuText" style="display: none"> Usos </p>') ?>
                 </li>
                 <li>

@@ -15,6 +15,31 @@
         </div>
     </div>
 
+    <br>
+
+    <!---- Buttons on top ------>
+    <div class="row">
+
+        <div class="col-xs-4 col-half-offset">
+
+            <a class="btn btn-success" style="color: white !important;" href="<?php base_url()?>/empleados" > Regresar </a>
+
+        </div>
+
+        <div class="col-xs-4 col-half-offset" style="float: right;">
+
+            <a class="btn btn-info" style="color: white !important;" href="<?php base_url()?>/empleados/editar_view/<?php echo $empleado->empleado_id; ?>" > Editar </a>
+
+            <a class="btn btn-warning col-half-offset" style="color: white !important;" href="<?php base_url()?>/empleados/nomina_view/<?php echo $empleado->empleado_id; ?>" > Nómina </a>
+
+            <a class="btn btn-danger col-half-offset" style="color: white !important;" data-toggle="modal" href="#myModal<?php echo $empleado->empleado_id; ?>" > Eliminar </a>
+
+        </div>
+
+    </div>
+
+
+    <!------ Start form ------>
     <div class="page-header" style="background-color: black"> </div>
     <div> <small style="color: black"> EXCLUSIVO PARA RECURSOS HUMANOS </small> </div>
 
@@ -446,24 +471,93 @@
 
         </div>
 
-        <br>
-        <div class="row">
 
-            <div class="col-xs-4 col-half-offset">
+    <div class="page-header" style="background-color: black; color: white;">
+        <strong>EXPEDIENTE </strong>
+    </div>
 
-                <a class="btn btn-info" style="color: white !important;" href="<?php base_url()?>/empleados/editar_view/<?php echo $empleado->empleado_id; ?>" > Editar </a>
+    <!------- EXPEDIENTE ------>
+    <div class="row">
 
-                <a class="btn btn-danger col-half-offset" style="color: white !important;" data-toggle="modal" href="#myModal<?php echo $empleado->empleado_id; ?>" > Eliminar </a>
+        <div class="col-xs-2 col-half-offset">
 
-            </div>
-
-            <div class="col-xs-4 col-half-offset">
-
-                <a class="btn btn-success" style="color: white !important; float: right;" href="<?php base_url()?>/empleados" > Regresar </a>
-
-            </div>
+            <div class="font-details-header"> <strong> SOLICITUD </strong></div>
+            <div style="color:black !important; font-size: 14px;"> <?php echo $empleado_expediente->solicitud?> </div>
 
         </div>
+
+        <div class="col-xs-2 ">
+
+            <div class="font-details-header"> <strong> ACTA </strong></div>
+            <div style="color:black !important; font-size: 14px;"> <?php echo $empleado_expediente->acta?> </div>
+
+        </div>
+
+        <div class="col-xs-2 ">
+
+            <div class="font-details-header"> <strong> INE </strong></div>
+            <div style="color:black !important; font-size: 14px;"> <?php echo $empleado_expediente->ine?> </div>
+
+        </div>
+
+        <div class="col-xs-2 ">
+
+            <div class="font-details-header"> <strong> CURP </strong></div>
+            <div style="color:black !important; font-size: 14px;"> <?php echo $empleado_expediente->curp_expediente?> </div>
+
+        </div>
+
+        <div class="col-xs-2 ">
+
+            <div class="font-details-header"> <strong> RFC </strong></div>
+            <div style="color:black !important; font-size: 14px;"> <?php echo $empleado_expediente->rfc_expediente?> </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-2 col-half-offset">
+
+            <div class="font-details-header"> <strong> DOMICILIO </strong></div>
+            <div style="color:black !important; font-size: 14px;"> <?php echo $empleado_expediente->domicilio?> </div>
+
+        </div>
+
+        <div class="col-xs-2 ">
+
+            <div class="font-details-header"> <strong> ESTUDIOS </strong></div>
+            <div style="color:black !important; font-size: 14px;"> <?php echo $empleado_expediente->estudios?> </div>
+
+        </div>
+
+        <div class="col-xs-2 ">
+
+            <div class="font-details-header"> <strong> RECOMENDACION </strong></div>
+            <div style="color:black !important; font-size: 14px;"> <?php echo $empleado_expediente->recomendacion?> </div>
+
+        </div>
+
+        <div class="col-xs-2 ">
+
+            <div class="font-details-header"> <strong> ANTIDOPING </strong></div>
+            <div style="color:black !important; font-size: 14px;"> <?php echo $empleado_expediente->antidoping?> </div>
+
+        </div>
+
+        <div class="col-xs-2 ">
+
+            <div class="font-details-header"> <strong> ANTECEDENTES </strong></div>
+            <div style="color:black !important; font-size: 14px;"> <?php echo $empleado_expediente->antecedentes?> </div>
+
+        </div>
+
+    </div>
+
+
+
 
     <br>
     <br>
