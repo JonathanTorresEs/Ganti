@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0011f336-0a15-478a-992f-cb4352a9666b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/public/js/empleados_view.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/empleados.php" afterPath="$PROJECT_DIR$/admin/application/controllers/empleados.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/models/empleados_model.php" afterPath="$PROJECT_DIR$/admin/application/models/empleados_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/models/nominas_model.php" afterPath="$PROJECT_DIR$/admin/application/models/nominas_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/agregar_costo_view.php" afterPath="$PROJECT_DIR$/admin/application/views/agregar_costo_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/agregar_empleado_view.php" afterPath="$PROJECT_DIR$/admin/application/views/agregar_empleado_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/clientes_view.php" afterPath="$PROJECT_DIR$/admin/application/views/clientes_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/costos_view.php" afterPath="$PROJECT_DIR$/admin/application/views/costos_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/detalles_costo_view.php" afterPath="$PROJECT_DIR$/admin/application/views/detalles_costo_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/detalles_empleado_view.php" afterPath="$PROJECT_DIR$/admin/application/views/detalles_empleado_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/editar_costo_view.php" afterPath="$PROJECT_DIR$/admin/application/views/editar_costo_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/editar_empleado_view.php" afterPath="$PROJECT_DIR$/admin/application/views/editar_empleado_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/empleados_view.php" afterPath="$PROJECT_DIR$/admin/application/views/empleados_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/giros_view.php" afterPath="$PROJECT_DIR$/admin/application/views/giros_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/nomina_cliente_view.php" afterPath="$PROJECT_DIR$/admin/application/views/nomina_cliente_view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/nominas_view.php" afterPath="$PROJECT_DIR$/admin/application/views/nominas_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/public/js/agregar_empleado.js" afterPath="$PROJECT_DIR$/admin/public/js/agregar_empleado.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/public/js/costos.js" afterPath="$PROJECT_DIR$/admin/public/js/costos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/public/js/nomina.js" afterPath="$PROJECT_DIR$/admin/public/js/nomina.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/public/js/nomina_view.js" afterPath="$PROJECT_DIR$/admin/public/js/nomina_view.js" />
     </list>
     <ignored path="ganti.iws" />
@@ -43,15 +25,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nomina_view.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nomina_view.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/public/js/nomina_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="312" column="0" selection-start-line="312" selection-start-column="0" selection-end-line="323" selection-end-column="1" />
+            <state relative-caret-position="198">
+              <caret line="208" column="82" selection-start-line="208" selection-start-column="82" selection-end-line="208" selection-end-column="82" />
               <folding>
-                <marker date="1513709562851" expanded="true" signature="6441:6454" ph="..." />
-                <marker date="1513709562851" expanded="true" signature="7616:7629" ph="..." />
-                <marker date="1513709562851" expanded="true" signature="8674:8687" ph="..." />
+                <element signature="e#540#2871#0" expanded="false" />
+                <marker date="1513798824764" expanded="true" signature="8243:8256" ph="..." />
+                <marker date="1513798824764" expanded="true" signature="9418:9431" ph="..." />
+                <marker date="1513798824764" expanded="true" signature="10575:10588" ph="..." />
+                <marker date="1513798824764" expanded="true" signature="11949:11962" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,7 +54,7 @@
       <file leaf-file-name="detalles_empleado_view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/application/views/detalles_empleado_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="1020">
               <caret line="60" column="110" selection-start-line="60" selection-start-column="83" selection-end-line="60" selection-end-column="128" />
               <folding />
             </state>
@@ -80,7 +64,7 @@
       <file leaf-file-name="agregar_empleado.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/public/js/agregar_empleado.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="646">
               <caret line="38" column="47" selection-start-line="35" selection-start-column="0" selection-end-line="40" selection-end-column="2" />
               <folding />
             </state>
@@ -90,7 +74,7 @@
       <file leaf-file-name="costos.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/public/js/costos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
+            <state relative-caret-position="340">
               <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
               <folding>
                 <element signature="e#106#663#0" expanded="false" />
@@ -113,21 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nomina_cliente_view.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nomina_cliente_view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/application/views/nomina_cliente_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="200" column="18" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nomina.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/public/js/nomina.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="236" column="42" selection-start-line="236" selection-start-column="42" selection-end-line="236" selection-end-column="42" />
+            <state relative-caret-position="17">
+              <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -184,8 +158,6 @@
         <option value="$PROJECT_DIR$/admin/application/models/empleados_model.php" />
         <option value="$PROJECT_DIR$/admin/public/js/empleados_view.js" />
         <option value="$PROJECT_DIR$/admin/public/js/jquery.number.min.js" />
-        <option value="$PROJECT_DIR$/admin/public/js/nomina_view.js" />
-        <option value="$PROJECT_DIR$/admin/application/views/nominas_view.php" />
         <option value="$PROJECT_DIR$/admin/application/views/clientes_view.php" />
         <option value="$PROJECT_DIR$/admin/application/views/giros_view.php" />
         <option value="$PROJECT_DIR$/admin/application/views/empleados_view.php" />
@@ -200,6 +172,8 @@
         <option value="$PROJECT_DIR$/admin/public/js/agregar_empleado.js" />
         <option value="$PROJECT_DIR$/admin/public/js/nomina.js" />
         <option value="$PROJECT_DIR$/admin/application/views/nomina_cliente_view.php" />
+        <option value="$PROJECT_DIR$/admin/public/js/nomina_view.js" />
+        <option value="$PROJECT_DIR$/admin/application/views/nominas_view.php" />
       </list>
     </option>
   </component>
@@ -251,7 +225,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../heatmap.js-amd" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="empleado&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/empleados.php&#10;nomina&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/nomina.js&#10;emplead&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/empleados.php&#10;agregar&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/agregar_empleado.js&#10;detalles&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/detalles_empleado_view.php&#10;costos&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/costos_view.php&#10;emplea&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/editar_empleado_view.php&#10;costo&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/editar_costo_view.php&#10;detal&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/detalles_costo_view.php&#10;nomin&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/nomina_view.js&#10;editar&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/editar_costo_view.php&#10;cost&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/costos_view.php&#10;agrega&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/agregar_empleado_view.php&#10;AGREGA&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/agregar_empleado.js&#10;edita&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/editar_empleado_view.php&#10;detall&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/detalles_empleado_view.php&#10;giros&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/giros_view.php&#10;cliente&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/clientes_view.php&#10;nominas&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/nominas_view.php&#10;empleados&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/empleados_view.php&#10;costos mo&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/costos_model.php&#10;order&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/order_model.php&#10;css&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/style.css&#10;agregar em&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/agregar_empleado.js&#10;js&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/costos.js&#10;empl&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/empleados_model.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/partials/admin_menu_view.php&#10;sideba&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/sidebar.js&#10;cos&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/costos.php&#10;agreg&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/agregar_costo_view.php&#10;hideta&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/hideTable.js&#10;reques&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/requesition_view.php&#10;deta&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/detalles_empleado_view.php&#10;emple&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/empleados.php&#10;agre&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/agregar_costo_view.php&#10;purchase&#9;null&#9;null&#10;clientes&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/clientes.php&#10;style&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/style.css&#10;jquery-ui&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/jquery-ui.min.js&#10;jquery&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/jquery-ui.min.js&#10;reque&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/requesition_view.php&#10;sty&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/style.css&#10;input&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/system/core/Input.php&#10;print&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/order_print_view.php&#10;inpu&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/system/core/Input.php&#10;operado&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/operadores_view.php&#10;operadores&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/operadores.php&#10;opera&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/operadores_view.php&#10;cli&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/clientes_view.php&#10;clien&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/clientes_model.php" />
+    <property name="SearchEverywhereHistoryKey" value="nomina_view&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/nominas_view.php&#10;emplea&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/empleados_model.php&#10;empleado&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/empleados.php&#10;nomina&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/nomina.js&#10;emplead&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/empleados.php&#10;agregar&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/agregar_empleado.js&#10;detalles&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/detalles_empleado_view.php&#10;costos&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/costos_view.php&#10;costo&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/editar_costo_view.php&#10;detal&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/detalles_costo_view.php&#10;nomin&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/nomina_view.js&#10;editar&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/editar_costo_view.php&#10;cost&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/costos_view.php&#10;agrega&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/agregar_empleado_view.php&#10;AGREGA&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/agregar_empleado.js&#10;edita&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/editar_empleado_view.php&#10;detall&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/detalles_empleado_view.php&#10;giros&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/giros_view.php&#10;cliente&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/clientes_view.php&#10;nominas&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/nominas_view.php&#10;empleados&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/empleados_view.php&#10;costos mo&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/costos_model.php&#10;order&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/order_model.php&#10;css&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/style.css&#10;agregar em&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/agregar_empleado.js&#10;js&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/costos.js&#10;empl&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/models/empleados_model.php&#10;admin&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/partials/admin_menu_view.php&#10;sideba&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/sidebar.js&#10;cos&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/costos.php&#10;agreg&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/agregar_costo_view.php&#10;hideta&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/hideTable.js&#10;reques&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/requesition_view.php&#10;deta&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/detalles_empleado_view.php&#10;emple&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/empleados.php&#10;agre&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/agregar_costo_view.php&#10;purchase&#9;null&#9;null&#10;clientes&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/clientes.php&#10;style&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/style.css&#10;jquery-ui&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/jquery-ui.min.js&#10;jquery&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/js/jquery-ui.min.js&#10;reque&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/requesition_view.php&#10;sty&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/public/css/style.css&#10;input&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/system/core/Input.php&#10;print&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/order_print_view.php&#10;inpu&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/system/core/Input.php&#10;operado&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/operadores_view.php&#10;operadores&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/controllers/operadores.php&#10;opera&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/operadores_view.php&#10;cli&#9;FILE&#9;file://C:/xampp/htdocs/ganti/admin/application/views/clientes_view.php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -390,16 +364,17 @@
       <workItem from="1513013876306" duration="6330000" />
       <workItem from="1513617755000" duration="4916000" />
       <workItem from="1513706212233" duration="9923000" />
-      <workItem from="1513748488515" duration="3702000" />
+      <workItem from="1513748488515" duration="4348000" />
+      <workItem from="1513796215831" duration="2756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="485128000" />
+    <option name="totallyTimeSpent" value="488530000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22254759" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -690,7 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,10 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-          <folding>
-            <marker date="1513621458269" expanded="true" signature="1594:1607" ph="..." />
-            <marker date="1513621458269" expanded="true" signature="3247:3279" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -763,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="81" column="122" selection-start-line="81" selection-start-column="79" selection-end-line="81" selection-end-column="122" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,17 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="128" column="93" selection-start-line="128" selection-start-column="93" selection-end-line="128" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/models/empleados_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="297" column="36" selection-start-line="297" selection-start-column="36" selection-end-line="297" selection-end-column="36" />
-          <folding>
-            <marker date="1513619659305" expanded="true" signature="1619:1666" ph="SELECT MAX(e... empleados" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -797,33 +751,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="39" column="100" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/nominas_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/public/js/nomina_view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="312" column="0" selection-start-line="312" selection-start-column="0" selection-end-line="323" selection-end-column="1" />
-          <folding>
-            <marker date="1513709562851" expanded="true" signature="6441:6454" ph="..." />
-            <marker date="1513709562851" expanded="true" signature="7616:7629" ph="..." />
-            <marker date="1513709562851" expanded="true" signature="8674:8687" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/public/js/costos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
+        <state relative-caret-position="340">
           <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
           <folding>
             <element signature="e#106#663#0" expanded="false" />
@@ -865,7 +798,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/public/js/agregar_empleado.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="646">
           <caret line="38" column="47" selection-start-line="35" selection-start-column="0" selection-end-line="40" selection-end-column="2" />
           <folding />
         </state>
@@ -873,15 +806,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/views/detalles_empleado_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="1020">
           <caret line="60" column="110" selection-start-line="60" selection-start-column="83" selection-end-line="60" selection-end-column="128" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/empleados_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="297" column="36" selection-start-line="297" selection-start-column="36" selection-end-line="297" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/public/js/nomina.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="674">
           <caret line="236" column="42" selection-start-line="236" selection-start-column="42" selection-end-line="236" selection-end-column="42" />
           <folding />
         </state>
@@ -889,9 +829,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/views/nomina_cliente_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="200" column="18" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
+        <state relative-caret-position="17">
+          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/nominas_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#5;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/public/js/nomina_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="208" column="82" selection-start-line="208" selection-start-column="82" selection-end-line="208" selection-end-column="82" />
+          <folding>
+            <element signature="e#540#2871#0" expanded="false" />
+            <marker date="1513798824764" expanded="true" signature="8243:8256" ph="..." />
+            <marker date="1513798824764" expanded="true" signature="9418:9431" ph="..." />
+            <marker date="1513798824764" expanded="true" signature="10575:10588" ph="..." />
+            <marker date="1513798824764" expanded="true" signature="11949:11962" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

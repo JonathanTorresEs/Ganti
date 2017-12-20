@@ -17,9 +17,12 @@
             </div>
         </div>
 
+        <small style="color: black;"> *Sólo empleados con nómina dada de alta </small>
+
         <div class="tab">
-            <button class="tablinks active" onclick="abrirTab(event)" id="IMSS_Tab"> IMSS </button>
+            <button class="tablinks active" onclick="abrirTab(event)" id="IMSS_Tab"> PERCEPCIONES </button>
             <button class="tablinks" onclick="abrirTab(event)" id="Deducibles_Tab"> DEDUCIBLES </button>
+            <button class="tablinks" onclick="abrirTab(event)" id="Sueldos_Tab"> SUELDOS </button>
             <button class="tablinks" onclick="abrirTab(event)" id="Expedientes_Tab"> EXPEDIENTES </button>
             <button class="tablinks" onclick="abrirTab(event)" id="Grupos_Tab"> GRUPOS IMSS </button>
 
@@ -74,7 +77,7 @@
 
         </div>
 
-        <!--- Div for the content of Tab IMSS --->
+        <!--- Div for the content of Tab Percepciones --->
         <div id="IMSS_Content">
 
             <!---- Table ---->
@@ -131,7 +134,8 @@
                     <div class="rTableHead"> <strong> IMSS </strong>  </div>
                     <div class="rTableHead"> <strong> PENSION ALIMENTICIA </strong>  </div>
                     <div class="rTableHead"> <strong> ISPT </strong>  </div>
-                    <div class="rTableHead"> <strong> NETO A PAGAR </strong>  </div>
+                    <div class="rTableHead"> <strong> TOTAL DEDUCCIONES </strong>  </div>
+                    <div class="rTableHead"> <strong> NETO A PAGAR IMSS </strong>  </div>
                 </div>
 
                 <!---- Table content ---->
@@ -146,6 +150,7 @@
                         <div class="rTableCell"> $<?php echo number_format($empleado->imss, 2, '.', ',') ?> </div>
                         <div class="rTableCell"> $<?php echo number_format($empleado->pension_alimenticia, 2, '.', ',') ?> </div>
                         <div class="rTableCell"> $<?php echo number_format($empleado->ispt, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format(($empleado->fondo_ahorro + $empleado->infonavit + $empleado->imss + $empleado->pension_alimenticia + $empleado->ispt), 2, '.', ',') ?> </div>
                         <div class="rTableCell"> $<?php echo number_format($empleado->neto, 2, '.', ',') ?> </div>
 
                     </div>
@@ -201,13 +206,49 @@
 
         </div>
 
-        <!--- Div containing search results with IMSS tab --->
+        <div id="Sueldos_Content" style="display: none;">
+
+            <!---- Table ---->
+            <div class="rTable">
+                <div class="rTableRow">
+                    <!---- Table headers ---->
+                    <div class="rTableHead"> <strong> NOMBRE COMPLETO </strong>  </div>
+                    <div class="rTableHead"> <strong> PUESTO </strong>  </div>
+                    <div class="rTableHead"> <strong> SUELDO SEMANAL </strong>  </div>
+                    <div class="rTableHead"> <strong> TOTAL DEDUCCIONES </strong>  </div>
+                    <div class="rTableHead"> <strong> TOTAL PERCIBIDO </strong>  </div>
+                    <div class="rTableHead"> <strong> NETO A PAGAR EN EFECTIVO </strong>  </div>
+                    <div class="rTableHead"> <strong> TOTAL SEMANAL </strong>  </div>
+                </div>
+
+                <!---- Table content ---->
+                <?php foreach ($empleados as $empleado) : ?>
+                    <div class="rTableRow">
+                        <div class="rTableCell"> <?php echo $empleado->nombre." ".$empleado->apellido_paterno." ".$empleado->apellido_materno; ?> </div>
+                        <div class="rTableCell"> <?php echo $empleado->puesto ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->sueldo, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format(($empleado->fondo_ahorro + $empleado->infonavit + $empleado->pension_alimenticia), 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format(($empleado->sueldo - ($empleado->fondo_ahorro + $empleado->infonavit + $empleado->pension_alimenticia)), 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format(($empleado->sueldo - ($empleado->fondo_ahorro + $empleado->infonavit + $empleado->pension_alimenticia + $empleado->neto)), 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format(($empleado->sueldo - ($empleado->fondo_ahorro + $empleado->infonavit + $empleado->pension_alimenticia + $empleado->neto)), 2, '.', ',') ?> </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+        </div>
+
+        <!--- Div containing search results with Percepiones tab --->
         <div id="IMSS_Search" style="display: none">
 
         </div>
 
         <!--- Div containing search results with Deducibles tab --->
         <div id="Deducibles_Search" style="display: none">
+
+        </div>
+
+        <!--- Div containing search results with Sueldos tab --->
+        <div id="Sueldos_Search" style="display: none">
 
         </div>
 

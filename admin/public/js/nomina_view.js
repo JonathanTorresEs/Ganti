@@ -28,24 +28,35 @@ function abrirTab(evt) {
             document.getElementById('Grupos_Content').style.display = "none";
             document.getElementById('Deducibles_Content').style.display = "none";
             document.getElementById('Expedientes_Content').style.display = "none";
+            document.getElementById('Sueldos_Content').style.display = "none";
         } else if (tabID == "Grupos_Tab")
         {
             document.getElementById('IMSS_Content').style.display = "none";
             document.getElementById('Grupos_Content').style.display = "block";
             document.getElementById('Deducibles_Content').style.display = "none";
             document.getElementById('Expedientes_Content').style.display = "none";
+            document.getElementById('Sueldos_Content').style.display = "none";
         }else if (tabID == "Deducibles_Tab")
         {
             document.getElementById('IMSS_Content').style.display = "none";
             document.getElementById('Grupos_Content').style.display = "none";
             document.getElementById('Deducibles_Content').style.display = "block";
             document.getElementById('Expedientes_Content').style.display = "none";
+            document.getElementById('Sueldos_Content').style.display = "none";
         } else if (tabID == "Expedientes_Tab")
         {
             document.getElementById('IMSS_Content').style.display = "none";
             document.getElementById('Grupos_Content').style.display = "none";
             document.getElementById('Deducibles_Content').style.display = "none";
             document.getElementById('Expedientes_Content').style.display = "block";
+            document.getElementById('Sueldos_Content').style.display = "none";
+        } else if (tabID == "Sueldos_Tab")
+        {
+            document.getElementById('IMSS_Content').style.display = "none";
+            document.getElementById('Grupos_Content').style.display = "none";
+            document.getElementById('Deducibles_Content').style.display = "none";
+            document.getElementById('Expedientes_Content').style.display = "none";
+            document.getElementById('Sueldos_Content').style.display = "block";
         }
     } else
     {
@@ -56,24 +67,35 @@ function abrirTab(evt) {
             document.getElementById('Grupos_Content').style.display = "none";
             document.getElementById('Deducibles_Search').style.display = "none";
             document.getElementById('Expedientes_Search').style.display = "none";
+            document.getElementById('Sueldos_Search').style.display = "none";
         } else if (tabID == "Grupos_Tab")
         {
             document.getElementById('IMSS_Search').style.display = "none";
             document.getElementById('Grupos_Content').style.display = "block";
             document.getElementById('Deducibles_Search').style.display = "none";
             document.getElementById('Expedientes_Search').style.display = "none";
+            document.getElementById('Sueldos_Search').style.display = "none";
         }else if (tabID == "Deducibles_Tab")
         {
             document.getElementById('IMSS_Search').style.display = "none";
             document.getElementById('Grupos_Content').style.display = "none";
             document.getElementById('Deducibles_Search').style.display = "block";
             document.getElementById('Expedientes_Search').style.display = "none";
+            document.getElementById('Sueldos_Search').style.display = "none";
         } else if (tabID == "Expedientes_Tab")
         {
             document.getElementById('IMSS_Search').style.display = "none";
             document.getElementById('Grupos_Content').style.display = "none";
             document.getElementById('Deducibles_Search').style.display = "none";
             document.getElementById('Expedientes_Search').style.display = "block";
+            document.getElementById('Sueldos_Search').style.display = "none";
+        } else if (tabID == "Sueldos_Tab")
+        {
+            document.getElementById('IMSS_Search').style.display = "none";
+            document.getElementById('Grupos_Content').style.display = "none";
+            document.getElementById('Deducibles_Search').style.display = "none";
+            document.getElementById('Expedientes_Search').style.display = "none";
+            document.getElementById('Sueldos_Search').style.display = "block";
         }
     }
 
@@ -101,6 +123,7 @@ function abrirTab(evt) {
         $('#IMSS_Search').empty();
         $('#Deducibles_Search').empty();
         $('#Expedientes_Search').empty();
+        $('#Sueldos_Search').empty();
 
         clearTimeout(typingTimer);
         typingTimer = setTimeout(doneTyping, doneTypingInterval);
@@ -134,6 +157,7 @@ function doneTyping () {
                 $('#IMSS_Content').hide();
                 $('#Deducibles_Content').hide();
                 $('#Expedientes_Content').hide();
+                $('#Sueldos_Content').hide();
                 $('#IMSS_Search').hide();
                 $('#Deducibles_Search').hide();
                 $('#Expedientes_Search').hide();
@@ -152,6 +176,10 @@ function doneTyping () {
                 {
                     $('#Expedientes_Tab').addClass('active');
                     $('#Expedientes_Search').show();
+                } else if ($('#Sueldos_Tab').hasClass("active"))
+                {
+                    $('#Sueldos_Tab').addClass('active');
+                    $('#Sueldos_Search').show();
                 } else if ($('#Grupos_Tab').hasClass("active"))
                 {
                     $('#Grupos_Tab').addClass('active');
@@ -186,7 +214,8 @@ function doneTyping () {
                     '<div class="rTableHead"> <strong> IMSS </strong>  </div>' +
                     '<div class="rTableHead"> <strong> PENSION ALIMENTICIA </strong>  </div>' +
                     '<div class="rTableHead"> <strong> ISPT </strong>  </div>' +
-                    '<div class="rTableHead"> <strong> NETO A PAGAR </strong>  </div>'
+                    '<div class="rTableHead"> <strong> TOTAL DEDUCCIONES </strong>  </div>' +
+                    '<div class="rTableHead"> <strong> NETO A PAGAR IMSS </strong>  </div>'
                 ));
 
                 //Make Expedientes_Search Table
@@ -207,6 +236,17 @@ function doneTyping () {
                     '<div class="rTableHead"> <strong> ANTECEDENTES </strong>  </div>'
                 ));
 
+                //Make Sueldos_Search Table
+                $('#Sueldos_Search').append($('<div class="rTable" style="color: black;" id="Sueldos_Search_Table">' +
+                    '<div class="rTableHead"> <strong> NOMBRE COMPLETO </strong>  </div>' +
+                    '<div class="rTableHead"> <strong> PUESTO </strong>  </div>' +
+                    '<div class="rTableHead"> <strong> SUELDO SEMANAL </strong>  </div>' +
+                    '<div class="rTableHead"> <strong> TOTAL DEDUCCIONES </strong>  </div>' +
+                    '<div class="rTableHead"> <strong> TOTAL PERCIBIDO </strong>  </div>' +
+                    '<div class="rTableHead"> <strong> NETO A PAGAR EN EFECTIVO </strong>  </div>' +
+                    '<div class="rTableHead"> <strong> TOTAL SEMANAL </strong>  </div>'
+                    ));
+
                 $.each((empleado), function (index, value) {
 
                     //Format each varchar number to float and then format to number
@@ -223,6 +263,17 @@ function doneTyping () {
                     $pension_alimenticia = addCommas(parseFloat(value.pension_alimenticia).toFixed(2));
                     $ispt = addCommas(parseFloat(value.ispt).toFixed(2));
                     $neto = addCommas(parseFloat(value.neto).toFixed(2));
+
+                    $total_deduccion_tab_deducibles = parseFloat(value.fondo_ahorro) + parseFloat(value.infonavit) + parseFloat(value.pension_alimenticia) + parseFloat(value.imss) + parseFloat(value.ispt);
+
+                    $total_deduccion = parseFloat(value.fondo_ahorro) + parseFloat(value.infonavit) + parseFloat(value.pension_alimenticia);
+                    $total_percibido = parseFloat(value.sueldo) - $total_deduccion;
+                    $total_neto = parseFloat(value.sueldo) - $total_deduccion - parseFloat(value.neto);
+
+                    $sueldo_mostrar = addCommas(parseFloat(value.sueldo).toFixed(2));
+                    $total_deduccion_mostrar = addCommas($total_deduccion.toFixed(2));
+                    $total_percibido_mostrar = addCommas($total_percibido.toFixed(2));
+                    $total_neto_mostrar = addCommas($total_neto.toFixed(2));
 
                     $('#IMSS_Search_Table').append($('' +
                         '<div class="rTableRow">' +
@@ -251,6 +302,7 @@ function doneTyping () {
                             '<div class="rTableCell">' + '$' + $imss + '</div>' +
                             '<div class="rTableCell">' + '$' + $pension_alimenticia + '</div>' +
                             '<div class="rTableCell">' + '$' + $ispt + '</div>' +
+                            '<div class="rTableCell">' + '$' + addCommas($total_deduccion_tab_deducibles.toFixed(2)) + '</div>' +
                             '<div class="rTableCell">' + '$' + $neto + '</div>' +
                             '</div>'
                         )),
@@ -273,11 +325,24 @@ function doneTyping () {
                             '<div class="rTableCell">' + value.antecedentes + '</div>' +
                             '</div>'
                         ))
+
+                    $('#Sueldos_Search_Table').append($('' +
+                        '<div class="rTableRow">' +
+                        '<div class="rTableCell">' + value.nombre + " " + value.apellido_paterno + " " + value.apellido_materno + '</div>' +
+                        '<div class="rTableCell">' + value.puesto + '</div>' +
+                        '<div class="rTableCell">' + '$' + $sueldo_mostrar + '</div>' +
+                        '<div class="rTableCell">' + '$' + $total_deduccion_mostrar + '</div>' +
+                        '<div class="rTableCell">' + '$' + $total_percibido_mostrar + '</div>' +
+                        '<div class="rTableCell">' + '$' + $total_neto_mostrar +  '</div>' +
+                        '<div class="rTableCell">' + '$' + $total_neto_mostrar +  '</div>' +
+                        '</div>'
+                    ))
                 });
 
                 $('#IMSS_Search').append($('</div>'));
                 $('#Deducibles_Search').append($('</div>'))
                 $('#Expedientes_Search').append($('</div>'))
+                $('#Sueldos_Search').append($('</div>'))
 
             },
             error: function () {
@@ -294,6 +359,7 @@ function doneTyping () {
         $('#IMSS_Search').hide();
         $('#Deducibles_Search').hide();
         $('#Expedientes_Search').hide();
+        $('#Sueldos_Search').hide();
         $('#IMSS_Content').show();
 
         //Un-highlight whichever tab is active
