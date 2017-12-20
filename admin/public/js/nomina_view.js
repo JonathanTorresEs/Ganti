@@ -88,7 +88,7 @@ function abrirTab(evt) {
     var typingTimer;                //timer identifier
     var doneTypingInterval = 1000;  //time in ms, 5 second for example
 
-    //Input fields where user will type and search in ]nomina.php
+    //Input fields where user will type and search in nomina.php
     $input = $('#SearchBar');
 
     //When user stops typing, search for Empleados
@@ -208,19 +208,35 @@ function doneTyping () {
                 ));
 
                 $.each((empleado), function (index, value) {
+
+                    //Format each varchar number to float and then format to number
+                    $salario_integrado = addCommas(parseFloat(value.salario_integrado).toFixed(2));
+                    $salario_diario = addCommas(parseFloat(value.salario_diario).toFixed(2));
+                    $importe = addCommas(parseFloat(value.importe).toFixed(2));
+                    $premio_asistencia = addCommas(parseFloat(value.premio_asistencia).toFixed(2));
+                    $premio_puntualidad = addCommas(parseFloat(value.premio_puntualidad).toFixed(2));
+                    $subsidio = addCommas(parseFloat(value.subsidio).toFixed(2));
+                    $subtotal = addCommas(parseFloat(value.subtotal).toFixed(2));
+                    $fondo_ahorro = addCommas(parseFloat(value.fondo_ahorro).toFixed(2));
+                    $infonavit = addCommas(parseFloat(value.infonavit).toFixed(2));
+                    $imss = addCommas(parseFloat(value.imss).toFixed(2));
+                    $pension_alimenticia = addCommas(parseFloat(value.pension_alimenticia).toFixed(2));
+                    $ispt = addCommas(parseFloat(value.ispt).toFixed(2));
+                    $neto = addCommas(parseFloat(value.neto).toFixed(2));
+
                     $('#IMSS_Search_Table').append($('' +
                         '<div class="rTableRow">' +
                         '<div class="rTableCell">' + value.nombre + " " + value.apellido_paterno + " " + value.apellido_materno + '</div>' +
                         '<div class="rTableCell">' + value.puesto + '</div>' +
                         '<div class="rTableCell">' + value.nomina_grupo + '</div>' +
                         '<div class="rTableCell">' + value.nomina_dias + '</div>' +
-                        '<div class="rTableCell">' + value.salario_integrado + '</div>' +
-                        '<div class="rTableCell">' + value.salario_diario + '</div>' +
-                        '<div class="rTableCell">' + value.importe + '</div>' +
-                        '<div class="rTableCell">' + value.premio_asistencia + '</div>' +
-                        '<div class="rTableCell">' + value.premio_puntualidad + '</div>' +
-                        '<div class="rTableCell">' + value.subsidio + '</div>' +
-                        '<div class="rTableCell">' + value.subtotal + '</div>' +
+                        '<div class="rTableCell">' + '$' + $salario_integrado + '</div>' +
+                        '<div class="rTableCell">' + '$' + $salario_diario + '</div>' +
+                        '<div class="rTableCell">' + '$' + $importe + '</div>' +
+                        '<div class="rTableCell">' + '$' + $premio_asistencia +  '</div>' +
+                        '<div class="rTableCell">' + '$' + $premio_puntualidad +  '</div>' +
+                        '<div class="rTableCell">' + '$' + $subsidio +  '</div>' +
+                        '<div class="rTableCell">' + '$' + $subtotal +  '</div>' +
                         '</div>'
                     )),
 
@@ -230,12 +246,12 @@ function doneTyping () {
                             '<div class="rTableCell">' + value.puesto + '</div>' +
                             '<div class="rTableCell">' + value.nomina_grupo + '</div>' +
                             '<div class="rTableCell">' + value.nomina_dias + '</div>' +
-                            '<div class="rTableCell">' + value.fondo_ahorro + '</div>' +
-                            '<div class="rTableCell">' + value.infonavit + '</div>' +
-                            '<div class="rTableCell">' + value.imss + '</div>' +
-                            '<div class="rTableCell">' + value.pension_alimenticia + '</div>' +
-                            '<div class="rTableCell">' + value.ispt + '</div>' +
-                            '<div class="rTableCell">' + value.neto + '</div>' +
+                            '<div class="rTableCell">' + '$' + $fondo_ahorro + '</div>' +
+                            '<div class="rTableCell">' + '$' + $infonavit + '</div>' +
+                            '<div class="rTableCell">' + '$' + $imss + '</div>' +
+                            '<div class="rTableCell">' + '$' + $pension_alimenticia + '</div>' +
+                            '<div class="rTableCell">' + '$' + $ispt + '</div>' +
+                            '<div class="rTableCell">' + '$' + $neto + '</div>' +
                             '</div>'
                         )),
 
@@ -291,4 +307,18 @@ function doneTyping () {
     }
 
 
+}
+
+
+function addCommas(nStr)
+{
+    nStr += '';
+    x = nStr.split('.');
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+    }
+    return x1 + x2;
 }

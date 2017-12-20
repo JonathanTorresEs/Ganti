@@ -474,7 +474,12 @@ class Empleados extends CI_Controller {
         echo json_encode($fondo_ahorros);
     }
 
-
+    public function live_search_empleados()
+    {
+        $nombre = $this->input->post('Empleado_Nombre');
+        $empleados = $this->empleados_model->live_search_empleados($nombre);
+        echo json_encode($empleados);
+    }
 
 
 }

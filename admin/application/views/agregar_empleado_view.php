@@ -11,7 +11,7 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Solicitud de Empleo</h1>
+            <h1 class="page-header">SOLICITUD DE EMPLEO</h1>
         </div>
     </div>
 

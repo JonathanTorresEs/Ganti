@@ -2,8 +2,10 @@
  * Created by  JonathanTorres on 08-Nov-17.
  */
 
+//Get Datepicker ready
 $(document).ready(function () {
 
+    //Datepicker ready
     $( ".datepicker" ).datepicker();
 
     $giro_id = $("#Giro option:selected").val();
@@ -88,6 +90,31 @@ $('#fecha_fin').change(function () {
 
 })
 
+//Importe functions
+//Clean number from $ and , to avoid user confusion
+$('#Importe').click(function () {
+
+    $importe = $('#Importe').val();
+    if ($importe != "")
+    {
+        $importe_clean = $importe.replace(/[A-Z]*[a-z]*[$]*[,]*/g, '');
+        document.getElementById('Importe').value = $importe_clean;
+    }
+    $(this).select();
+
+})
+
+//Add again $ and , when user is done typing importe
+$('#Importe').focusout(function () {
+
+    $importe = $('#Importe').val();
+    if ($importe != "")
+    {
+        document.getElementById('Importe').value = "$" + addCommas(parseFloat($importe).toFixed(2));
+    }
+
+})
+
 //Since readonly inputs cannot have required,
 //we must validate other inputs to check user  has selected Localidad, Cliente, and Empleado
 $(document).on('click', 'form input[type=submit]', function (e) {
@@ -96,6 +123,7 @@ $(document).on('click', 'form input[type=submit]', function (e) {
     $rfc = document.getElementById('RFC').value;
     $empleado_id = document.getElementById('Empleado_No').value;
 
+    //Something is empty, so highlight it
     if (($municipio == '') || ($rfc == '') || ($empleado_id == ''))
     {
         e.preventDefault();
@@ -112,6 +140,11 @@ $(document).on('click', 'form input[type=submit]', function (e) {
         }
 
     } else {
+
+        //Clean importe to store only number in DB
+        $importe = $('#Importe').val().replace(/[A-Z]*[a-z]*[$]*[,]*/g, '');
+        document.getElementById('Importe').value = $importe;
+
         $localidad_nombre = $.trim($("#Localidad option:selected").text());
         document.getElementById('Localidad_Name').value = $localidad_nombre;
         $empleado_nombre = $.trim($("#Empleado option:selected").text());
@@ -362,3 +395,18 @@ $("#Empleado").on('input', function () {
 
     }
 });
+
+
+//Function used to add commas to number format
+function addCommas(nStr)
+{
+    nStr += '';
+    x = nStr.split('.');
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+    }
+    return x1 + x2;
+}

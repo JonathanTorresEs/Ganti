@@ -292,4 +292,28 @@ class Empleados_model extends  CI_Model{
             return false;
     }
 
+    public function live_search_empleados($nombre)
+    {
+        $string = $nombre;
+        $pos = strpos($string, " ");
+        $queryPartial = '';
+        if($pos !== false){
+            $e = explode(" ",$string);
+            $queryPartial = "(nombre LIKE \"%$e[0]%\" and apellido_paterno LIKE \"%$e[1]%\") AND deleted_at IS NULL";
+            if(isset($e[3])) {
+                $queryPartial = "(nombre LIKE \"%".$e[0].' '.$e[1]."%\" and apellido_paterno LIKE \"%".$e[2].'%" and apellido_materno LIKE "%'.$e[3]."%\") AND deleted_at IS NULL";
+            } else if(isset($e[2])) {
+                $queryPartial = "(nombre LIKE \"%".$e[0].' '.$e[1]."%\" and apellido_paterno LIKE \"%$e[2]%\") OR (nombre LIKE \"%$e[0]%\" and apellido_paterno LIKE \"%".$e[1].'%" and apellido_materno LIKE "%'.$e[2]."%\") AND deleted_at IS NULL";
+            }
+        } else {
+            $queryPartial = "(apellido_paterno LIKE '%$nombre%' OR nombre LIKE '%$nombre%'  OR apellido_materno LIKE '%$nombre%') AND empleados.deleted_at IS NULL";
+        }
+
+        $this->db->select('*');
+        $this->db->from('empleados');
+        $this->db->where($queryPartial);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 }

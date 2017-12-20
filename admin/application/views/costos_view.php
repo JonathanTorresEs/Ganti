@@ -5,7 +5,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Centros de Costos</h1>
+                <h1 class="page-header">CENTROS DE COSTOS</h1>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@
                     <div class="rTableCell"> <?php echo $costo->nombre; ?> </div>
                     <div class="rTableCell"> <?php echo $costo->objeto?> </div>
                     <div class="rTableCell"> <?php echo $costo->localizacion; ?> </div>
-                    <div class="rTableCell"> $<?php echo $costo->importe; ?> </div>
+                    <div class="rTableCell"> $<?php echo number_format($costo->importe, 2, '.', ',') ?> </div>
                     <div class="rTableCell"> <?php echo $costo->cliente_nombre; ?> </div>
                     <div class="rTableCell"> <?php echo $costo->empleado_nombre; ?> </div>
                     <div class="rTableCell"> <a href="<?php echo base_url(); ?>costos/ver_detalles/<?php echo $costo->costo_id; ?>"><i class="fa fa-info-circle" style="color: black; padding-left: 5px;"></i></a></div>

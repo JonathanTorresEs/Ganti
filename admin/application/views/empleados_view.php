@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-lg-12">
 
-                <h1 class="page-header">Empleados</h1>
+                <h1 class="page-header">EMPLEADOS</h1>
 
             </div>
 
@@ -24,14 +24,30 @@
 
                 <div class="row" style="padding-left: 50px;">
 
-                    <a href="<?php base_url()?>/empleados/agregar_view" class="btn red-submit" style="max-width: 100px;">+</a>
+                    <div class="col-xs-2">
 
-                </div>
+                        <a href="<?php base_url()?>/empleados/agregar_view" class="btn red-submit" style="max-width: 100px;">+</a>
 
-                <br>
+                    </div>
+
+                    <div class="col-xs-2"> </div>
+
+                    <div class="col-xs-2"> </div>
+
+                    <div class="col-xs-2"> </div>
+
+                    <div class="col-xs-2 col-half-offset">
+
+                        <input type="text" class="form-control" id="SearchBar" placeholder="Buscar empleado..." style="max-width: 400px; float: right;">
+
+                    </div>
+
+                </div> <br>
+
+
 
                 <!---- Table ---->
-                <div class="rTable">
+                <div class="rTable" id="Empleados_Content">
                     <div class="rTableRow">
                         <!---- Table headers ---->
                         <div class="rTableHead"><strong>ID</strong></div>
@@ -58,7 +74,15 @@
                         </div>
                     <?php endforeach; ?>
                 </div>
+
+                <!--- Div containing search results --->
+                <div id="Empleados_Search" style="display: none">
+
+                </div>
+
             </div>
 
     </div>
 </div>
+
+<script src="<?=base_url()?>public/js/empleados_view.js"></script>

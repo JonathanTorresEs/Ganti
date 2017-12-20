@@ -11,7 +11,7 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Solicitud de Empleo</h1>
+            <h1 class="page-header">SOLICITUD DE EMPLEO</h1>
         </div>
     </div>
 
@@ -35,7 +35,7 @@
             <div class="col-xs-2 col-half-offset">
 
                 <div class="font-details-header"> <strong> SUELDO SEMANAL: </strong></div>
-                <input required   class="form-control" id="Sueldo" name="Sueldo" value="<?php echo $empleado->sueldo ;?>"> </input>
+                <input required   class="form-control" id="Sueldo" name="Sueldo" value="$<?php echo number_format($empleado->sueldo, 2, '.', ',') ;?>"> </input>
 
             </div>
 

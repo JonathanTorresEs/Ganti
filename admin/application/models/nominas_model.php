@@ -42,7 +42,7 @@
                     $queryPartial = "(nombre LIKE \"%".$e[0].' '.$e[1]."%\" and apellido_paterno LIKE \"%$e[2]%\") OR (nombre LIKE \"%$e[0]%\" and apellido_paterno LIKE \"%".$e[1].'%" and apellido_materno LIKE "%'.$e[2]."%\") AND deleted_at IS NULL";
                 }
             } else {
-                $queryPartial = "(apellido_paterno LIKE '%$nombre%' OR nombre LIKE '%$nombre%'  OR apellido_materno LIKE '%$nombre%') AND empleados.deleted_at IS NULL";
+                $queryPartial = "(apellido_paterno LIKE '%$nombre%' OR nombre LIKE '%$nombre%'  OR apellido_materno LIKE '%$nombre%') AND empleados.deleted_at IS NULL AND empleados_nomina.empleado_id IS NOT NULL";
             }
 
             $this->db->select('*');

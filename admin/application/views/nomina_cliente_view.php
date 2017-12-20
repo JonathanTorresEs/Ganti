@@ -11,7 +11,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Nómina del Empleado</h1>
+                <h1 class="page-header">NÓMINA DEL EMPLEADO</h1>
             </div>
         </div>
 
@@ -181,9 +181,9 @@
 
                 <div class="font-details-header"> <strong> INFONAVIT </strong></div>
                 <?php if(isset($empleado)) { ?>
-                    <input required class="form-control Deduccion" id="Infonavit" name="Infonavit" value="<?php echo $empleado->infonavit ?>"> </input>
+                    <input required class="form-control Deduccion" id="Infonavit" name="Infonavit" value="$<?php echo number_format($empleado->infonavit, 2, '.', ',')?>"> </input>
                 <?php } else { ?>
-                    <input required class="form-control Deduccion" id="Infonavit" name="Infonavit" value="0"> </input>
+                    <input required class="form-control Deduccion" id="Infonavit" name="Infonavit" value="$0.00"> </input>
                 <?php }?>
 
 
@@ -204,9 +204,9 @@
 
                 <div class="font-details-header"> <strong> PENSION ALIMENTICIA </strong></div>
                 <?php if(isset($empleado)) { ?>
-                    <input required class="form-control Deduccion" id="Pension_Alimenticia" name="Pension_Alimenticia" value="<?php echo $empleado->pension_alimenticia ?>"> </input>
+                    <input required class="form-control Deduccion" id="Pension_Alimenticia" name="Pension_Alimenticia" value="$<?php echo number_format($empleado->pension_alimenticia, 2, '.', ',')?>"> </input>
                 <?php } else { ?>
-                    <input required class="form-control Deduccion" id="Pension_Alimenticia" name="Pension_Alimenticia" value="0"> </input>
+                    <input required class="form-control Deduccion" id="Pension_Alimenticia" name="Pension_Alimenticia" value="$0.00"> </input>
                 <?php }?>
 
             </div>

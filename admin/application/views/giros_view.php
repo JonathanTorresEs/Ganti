@@ -27,7 +27,7 @@ if (isset($actualizarGiro)) {
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Giros</h1>
+                <h1 class="page-header">GIROS</h1>
                 <?php if ($this->session->userdata('profile') == 'Administrador') { ?>
                     <?php echo form_open("giros/$action", 'method="post" class="margin-bottom"'); ?>
                     <?php echo $turn_id; ?>

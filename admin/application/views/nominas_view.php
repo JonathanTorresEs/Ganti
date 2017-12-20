@@ -13,7 +13,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Nóminas</h1>
+                <h1 class="page-header">NÓMINAS</h1>
             </div>
         </div>
 
@@ -55,18 +55,18 @@
                     <div class="rTableRow">
                         <div class="rTableCell"> <?php echo $nomina->grupo; ?> </div>
                         <div class="rTableCell"> <?php echo $nomina->dias; ?> </div>
-                        <div class="rTableCell"> $<?php echo $nomina->salario_integrado; ?> </div>
-                        <div class="rTableCell"> $<?php echo $nomina->salario_diario; ?> </div>
-                        <div class="rTableCell"> $<?php echo $nomina->importe; ?> </div>
-                        <div class="rTableCell"> $<?php echo $nomina->premio_asistencia; ?> </div>
-                        <div class="rTableCell"> $<?php echo $nomina->premio_puntualidad; ?> </div>
-                        <div class="rTableCell"> <?php echo $nomina->subsidio; ?> </div>
-                        <div class="rTableCell"> $<?php echo $nomina->subtotal; ?> </div>
-                        <div class="rTableCell"> <?php echo $nomina->fondo_ahorro; ?> </div>
-                        <div class="rTableCell"> <?php echo $nomina->amort_inf; ?> </div>
-                        <div class="rTableCell"> $<?php echo $nomina->imss; ?> </div>
-                        <div class="rTableCell"> $<?php echo $nomina->ispt; ?> </div>
-                        <div class="rTableCell"> $<?php echo $nomina->neto; ?>.00 </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->salario_integrado, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->salario_diario, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->importe, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->premio_asistencia, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->premio_puntualidad, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->subsidio, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->subtotal, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->fondo_ahorro, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->amort_inf, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->imss, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->ispt, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($nomina->neto, 2, '.', ',') ?> </div>
 
                     </div>
                 <?php endforeach; ?>
@@ -101,13 +101,13 @@
                         <div class="rTableCell"> <?php echo $empleado->puesto; ?> </div>
                         <div class="rTableCell"> <?php echo $empleado->nomina_grupo; ?> </div>
                         <div class="rTableCell"> <?php echo $empleado->nomina_dias; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->salario_integrado; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->salario_diario; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->importe; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->premio_asistencia; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->premio_puntualidad; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->subsidio; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->subtotal; ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->salario_integrado, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->salario_diario, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->importe, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->premio_asistencia, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->premio_puntualidad, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->subsidio, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->subtotal, 2, '.', ','); ?> </div>
 
                     </div>
                 <?php endforeach; ?>
@@ -141,12 +141,12 @@
                         <div class="rTableCell"> <?php echo $empleado->puesto; ?> </div>
                         <div class="rTableCell"> <?php echo $empleado->nomina_grupo; ?> </div>
                         <div class="rTableCell"> <?php echo $empleado->nomina_dias; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->fondo_ahorro; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->infonavit; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->imss; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->pension_alimenticia; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->ispt; ?> </div>
-                        <div class="rTableCell"> <?php echo $empleado->neto; ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->fondo_ahorro, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->infonavit, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->imss, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->pension_alimenticia, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->ispt, 2, '.', ',') ?> </div>
+                        <div class="rTableCell"> $<?php echo number_format($empleado->neto, 2, '.', ',') ?> </div>
 
                     </div>
                 <?php endforeach; ?>

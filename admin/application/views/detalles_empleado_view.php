@@ -11,7 +11,7 @@
 <div id="page-wrapper">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Detalles del Empleado</h1>
+            <h1 class="page-header">DETALLES DEL EMPLEADO</h1>
         </div>
     </div>
 
@@ -58,7 +58,7 @@
             <div class="col-xs-2 col-half-offset">
 
                 <div class="font-details-header"> <strong> SUELDO SEMANAL: </strong></div>
-                <div style="color:black !important; font-size: 14px;"> <?php echo $empleado->sueldo ?> </div>
+                <div style="color:black !important; font-size: 14px;"> $<?php echo number_format($empleado->sueldo, 2, '.', ',') ?> </div>
 
             </div>
 

@@ -11,7 +11,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Centro de Costos </h1>
+                <h1 class="page-header">CENTROS DE COSTOS </h1>
             </div>
         </div>
 
@@ -126,7 +126,7 @@
 
                 <div class="col-xs-3">
                     <div class="font-details-header"> <strong>IMPORTE ORIGINAL DEL CONTRATO*</strong></div>
-                    <input required class="form-control" id="Importe" name="Importe" value="<?php echo $costo->importe?>" style="max-width: 200px;"> </input>
+                    <input required class="form-control" id="Importe" name="Importe" value="$<?php echo number_format($costo->importe, 2, '.', ',')?>" style="max-width: 200px;"> </input>
                 </div>
 
             </div>
