@@ -17,7 +17,20 @@
             </div>
         </div>
 
+        <div>
+
         <small style="color: black;"> *Sólo empleados con nómina dada de alta </small>
+            <form action="/nominas/download_excel_nominas">
+                <input class="btn btn-danger" type="submit" style="float: right;" value="Descargar Excel"> </input>
+
+                <br><br>
+            </form>
+
+
+
+        </div>
+
+
 
         <div class="tab">
             <button class="tablinks active" onclick="abrirTab(event)" id="IMSS_Tab"> PERCEPCIONES </button>

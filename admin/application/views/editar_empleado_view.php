@@ -125,19 +125,19 @@
                 <div class="font-details-header"> <strong> ESTADO CIVIL: </strong></div>
                 <fieldset style="color: black" name="Estado_Civil">
                     <?php if ($empleado->estado_civil == 'Soltero') { ?>
-                    <input required required checked type="radio" name="Estado_Civil" value="Soltero"> Soltero
-                    <input required required type="radio" name="Estado_Civil" value="Casado"> Casado
-                    <input required required type="radio" value="" name=Estado_Civil"> Otro (especifique)<input required class="form-control" id="Otro_Estado_Civil" type="text" value="" name="Otro_Estado_Civil" style="display: none">
+                        <input required checked type="radio" name="Estado_Civil" value="Soltero"> Soltero
+                        <input required type="radio" name="Estado_Civil" value="Casado"> Casado
+                        <input required type="radio" value="" name="Estado_Civil"> Otro (especifique)
                         <input class="form-control" id="Otro_Estado_Civil" type="text" value="" name="Otro_Estado_Civil" style="display: none">
                     <?php } else if ($empleado->estado_civil == 'Casado') { ?>
-                        <input required required type="radio" name="Estado_Civil" value="Soltero"> Soltero
-                        <input required required checked type="radio" name="Estado_Civil" value="Casado"> Casado
-                        <input required required type="radio" name="Estado_Civil" value="" > Otro (especifique)
+                        <input required type="radio" name="Estado_Civil" value="Soltero"> Soltero
+                        <input required checked type="radio" name="Estado_Civil" value="Casado"> Casado
+                        <input required type="radio" name="Estado_Civil" value="" > Otro (especifique)
                         <input class="form-control" id="Otro_Estado_Civil" type="text" value="" name="Otro_Estado_Civil" style="display: none">
                     <?php } else { ?>
-                        <input required required type="radio" name="Estado_Civil" value="Soltero"> Soltero
-                        <input required required type="radio" name="Estado_Civil" value="Casado"> Casado
-                        <input required checked required type="radio" name="Estado_Civil" value="" > Otro (especifique)
+                        <input required type="radio" name="Estado_Civil" value="Soltero"> Soltero
+                        <input required type="radio" name="Estado_Civil" value="Casado"> Casado
+                        <input required checked type="radio" name="Estado_Civil" value="" > Otro (especifique)
                         <input class="form-control" id="Otro_Estado_Civil" type="text" value="<?php echo $empleado->estado_civil?>" name="Otro_Estado_Civil" style="display: block">
                     <?php } ?>
                 </fieldset>
